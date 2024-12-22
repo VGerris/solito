@@ -9,12 +9,12 @@ export function HomeScreen() {
     <View
       sx={{ flex: 1, justifyContent: 'center', alignItems: 'center', p: 16 }}
     >
-      <H1 sx={{ fontWeight: '800' }}>Welcome to Solito.</H1>
+      <H1 sx={{ fontWeight: '800' }}>Welcome to Payments.</H1>
       <View sx={{ maxWidth: 600 }}>
         <P sx={{ textAlign: 'center' }}>
           Here is a basic starter to show you how you can navigate from one
           screen to another. This screen uses the same code on Next.js and React
-          Native.
+          Native. TEST
         </P>
         <P sx={{ textAlign: 'center' }}>
           Solito is made by{' '}
@@ -57,8 +57,10 @@ export function HomeScreen() {
             rotateZ: '0deg',
           }}
           transition={{
-            type: 'timing',
-            duration: 150,
+            opacity: {
+              type: 'timing',
+              duration: 150,
+            }
           }}
         >
           <Text
